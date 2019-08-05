@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg2"
+    tools:context="com.ls.celtica.lsdelivryls.Login">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cairo"
+        android:layout_marginBottom="70dp"
+        android:textSize="80sp"
+        android:textColor="@color/AppColor"
+        android:textAlignment="center"
+        android:text="@string/login_titre"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cairo"
+        android:textSize="37sp"
+        android:textColor="@color/AppColor"
+        android:textAlignment="center"
+        android:text="@string/login_modeTitre"/>
+
+    <TextView
+        android:id="@+id/login_mode"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_butt"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="@font/cairo"
+        android:textSize="37sp"
+        android:textColorHint="@color/White"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:text="@string/login_modeHint"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/div_modeVendeur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairo"
+            android:textSize="37sp"
+            android:textColor="@color/AppColor"
+            android:textAlignment="center"
+            android:text="@string/login_pseudo_Label"/>
+
+    <TextView
+        android:id="@+id/login_vendeur"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_butt"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/cairo"
+        android:textSize="37sp"
+        android:textColorHint="@color/White"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:text="@string/login_pseudoHint"
+         />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cairo"
+        android:textSize="37sp"
+        android:textColor="@color/AppColor"
+        android:textAlignment="center"
+        android:text="@string/login_mdp_Label"
+        android:visibility="gone"/>
+
+    <EditText
+        android:id="@+id/login_mdp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_butt"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:inputType="textPassword"
+        android:fontFamily="@font/cairo"
+        android:hint="@string/login_mdp_Hint"
+        android:textColorHint="@color/White"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cairo"
+        android:textSize="37sp"
+        android:textColor="@color/AppColor"
+        android:textAlignment="center"
+        android:text="@string/login_user_LabelCamion"/>
+
+    <TextView
+        android:id="@+id/login_camion"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_butt"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="@font/cairo"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="37sp"
+        android:text="@string/login_user_descCamion"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:fontFamily="@font/cairo"
+        android:textSize="37sp"
+        android:textColor="@color/AppColor"
+        android:textAlignment="center"
+        android:text="@string/login_device_Hint"/>
+
+    <Spinner
+        android:id="@+id/login_type_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_butt"
+        android:visibility="gone"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:popupBackground="@color/AppColor"
+        android:textAlignment="center"
+        />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_valider"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_butt"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginLeft="200dp"
+        android:layout_marginRight="200dp"
+        android:layout_marginTop="55dp"
+        android:textColorHint="@color/White"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="37sp"
+        android:text="@string/login_valider"/>
+
+</LinearLayout>

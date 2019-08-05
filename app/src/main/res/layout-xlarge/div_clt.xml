@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/AppColor"
+    android:layout_marginBottom="2dp"
+    android:paddingTop="5dp"
+    android:paddingLeft="40dp"
+    android:paddingBottom="5dp">
+    <TextView
+        android:id="@+id/nom_clt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cairo"
+
+        android:textSize="33sp"
+        android:textColor="@color/White"
+        android:text="Benguergoura Mohamed Riadh"/>
+
+    <TextView
+        android:id="@+id/codebar_clt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cairo"
+        android:layout_marginTop="-14dp"
+
+        android:textSize="30sp"
+        android:textColor="@color/White"
+        android:text="Code Bar: 25632158952"/>
+
+
+
+</LinearLayout>

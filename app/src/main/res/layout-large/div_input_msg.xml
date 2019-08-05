@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/div_inp_msg_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/cairo"
+            android:textColor="@color/Black"
+            android:textSize="26sp"
+            android:text="Donner un msg .."/>
+        <EditText
+            android:id="@+id/div_inp_msg_inp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_butt2"
+            android:fontFamily="@font/cairo"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:hint="Nom d imprimante .."
+            android:minHeight="70dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/div_inp_msg_valider"
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_butt"
+                android:gravity="center"
+                android:fontFamily="@font/cairo"
+                android:textSize="22sp"
+                android:textColor="@color/White"
+                android:text="Valider"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

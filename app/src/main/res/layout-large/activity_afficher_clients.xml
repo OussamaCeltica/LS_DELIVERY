@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:id="@+id/body_clt"
+    tools:context="com.ls.celtica.lsdelivryls.Clients.AfficherClients">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <!-- div de Bar Title  -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@color/AppColor">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/cairo"
+                android:gravity="center"
+                android:text="@string/aff_clt_titre"
+                android:textAlignment="center"
+                android:textColor="@color/White"
+                android:textSize="28sp" />
+            <LinearLayout
+                android:id="@+id/affClt_search_butt"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:padding="14dp"
+                android:background="@color/AppColor"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="left">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/search_ic"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/addClt_butt"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:background="@color/AppColor"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="right">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/user_add"/>
+
+            </LinearLayout>
+
+            <!-- div de recherche d un client -->
+            <FrameLayout
+                android:id="@+id/affClt_div_search"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="-70dp"
+                android:orientation="horizontal"
+                android:background="@color/AppColor">
+                <ImageView
+                    android:id="@+id/affClt_div_search_back"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/back"/>
+                <EditText
+                    android:id="@+id/clt_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:background="@color/AppColor"
+                    android:fontFamily="@font/cairo"
+                    android:gravity="center"
+                    android:textColorHint="@color/White"
+                    android:hint="@string/aff_clt_chercher"
+                    android:textColor="@color/White"
+                    android:textSize="22sp" />
+
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <!-- Affichage des clients .. -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/Div_AffichClt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"></android.support.v7.widget.RecyclerView>
+
+
+
+
+        
+        
+        
+        
+    </LinearLayout>
+
+</FrameLayout>

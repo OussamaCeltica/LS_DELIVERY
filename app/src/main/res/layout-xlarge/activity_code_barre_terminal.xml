@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.ls.celtica.lsdelivryls.lsdelivery.CodeBarreTerminal">
+    <EditText
+        android:id="@+id/terminal_code"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textColorHint="@color/White"
+        android:fontFamily="@font/cairo"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/bg_butt"
+        android:hint="@string/add_pr_panier_scan_Hint"
+        android:textSize="37sp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/terminal_select_Butt"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:fontFamily="@font/cairo"
+        android:background="@drawable/bg_butt"
+        android:textColor="@color/White"
+        android:textSize="37sp"
+        android:text="@string/faireVente_selectPr"
+        android:textAlignment="center"/>
+</LinearLayout>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <!-- div modification du quantiy -->
+            <LinearLayout
+                android:id="@+id/div_change_qt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/div_msg_qt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/cairo"
+                    android:textColor="@color/Black"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:text="@string/faireVente_panierModifQt" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/cairo"
+                        android:textSize="16sp"
+                        android:text="@string/faireVente_scanner_qt" />
+
+                    <EditText
+                        android:id="@+id/panier_pr_modif_qt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        android:fontFamily="@font/cairo"
+                        android:layout_weight="1"
+                        android:textColor="@color/AppColor"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <!-- div modification du prix -->
+            <LinearLayout
+                android:id="@+id/div_change_prix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/div_msg_prix"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/cairo"
+                    android:textColor="@color/Black"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:text="@string/faireVente_panierModifPrix" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/cairo"
+                        android:textSize="16sp"
+                        android:text="@string/pr_prixVente" />
+
+                    <EditText
+                        android:id="@+id/panier_pr_modif_prix"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        android:fontFamily="@font/cairo"
+                        android:layout_weight="1"
+                        android:textColor="@color/AppColor"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- div modification de remise -->
+            <LinearLayout
+                android:id="@+id/div_change_remise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/div_msg_remise"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/cairo"
+                    android:textColor="@color/Black"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:text="@string/faireVente_remisePr" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/cairo"
+                        android:textSize="16sp"
+                        android:text="@string/faireVente_remiseTitre" />
+
+                    <EditText
+                        android:id="@+id/panier_pr_modif_remise"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        android:fontFamily="@font/cairo"
+                        android:layout_weight="1"
+                        android:textColor="@color/AppColor"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/panier_modif_valider"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_butt"
+                    android:gravity="center"
+                    android:textColor="@color/White"
+                    android:textSize="15sp"
+                    android:text="@string/param_AddPr_valider"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="25dp"
+                android:background="@color/Black"/>
+
+            <!-- div suppresion produit -->
+            <LinearLayout
+                android:id="@+id/div_supp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/div_confirm_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/cairo"
+                    android:textColor="@color/Black"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:text="@string/faireVente_supp_pr_desc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/panier_supp_pr_oui"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/cairo"
+                        android:background="@drawable/bg_butt"
+                        android:textColor="@color/White"
+                        android:text="@string/faireVente_supp_pr_oui" />
+
+                    <TextView
+                        android:id="@+id/panier_supp_pr_non"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/cairo"
+                        android:background="@drawable/bg_butt"
+                        android:layout_weight="1"
+                        android:visibility="gone"
+                        android:textColor="@color/White"
+                        android:text="@string/faireVente_supp_pr_non" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

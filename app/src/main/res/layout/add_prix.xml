@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/add_prix_type"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:background="@drawable/bg_butt"
+        android:fontFamily="@font/cairo"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textSize="18sp"
+        android:text="@string/param_AddPrix_type"/>
+
+    <EditText
+        android:id="@+id/add_prix_prix"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:background="@drawable/bg_butt"
+        android:fontFamily="@font/cairo"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textColorHint="@color/White"
+        android:hint="@string/param_AddPrix_prix"/>
+
+    <TextView
+        android:id="@+id/add_prix_valider"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:background="@drawable/bg_butt"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:text="@string/add_clt_valider"/>
+
+</LinearLayout>

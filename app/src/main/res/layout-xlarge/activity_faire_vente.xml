@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context="com.ls.celtica.lsdelivryls.Ventes.FaireVente">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="90dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/AppColor">
+            <ImageView
+                android:id="@+id/faire_remise_butt"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:visibility="gone"
+                android:padding="8dp"
+                android:src="@drawable/remise"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="80dp"
+                android:fontFamily="@font/cairo"
+                android:gravity="center"
+                android:text="@string/faireVente_titre"
+
+                android:textAlignment="center"
+                android:textColor="@color/White"
+                android:textSize="32sp" />
+
+            <LinearLayout
+                android:id="@+id/addPrToPanier_butt"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:padding="7dp"
+                android:layout_gravity="right"
+                android:background="@color/White">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/add_pr_org"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/imprime_butt"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:layout_gravity="right"
+                android:background="@color/White">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/imp_ico"/>
+            </LinearLayout>
+        </FrameLayout>
+
+
+
+        <!--  Ajouter produit butt .. -->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:background="@drawable/bg_butt">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="3"
+                android:src="@drawable/add_pr"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/cairo"
+                android:textSize="16sp"
+                android:textColor="@color/White"
+                android:text="@string/faireVente_addPr"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/faireVente_tot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:textAlignment="center"
+            android:textColor="@color/Green"
+            android:text="0.0 DA"/>
+
+        <TextView
+            android:id="@+id/faireVente_clt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="21sp"
+            android:background="@color/Black"
+            android:fontFamily="@font/cairo"
+            android:lineSpacingExtra="-15sp"
+            android:textAlignment="center"
+            android:textColor="@color/White"
+            android:text="Client: SONATRACH CHARIKA USMB MATMOUTCHI SPR 1 2018"/>
+
+        <!-- Bar titre du tableau des clients .. -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:background="@color/White">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/panier_pr_titre"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:gravity="center"
+                    android:textAlignment="textStart"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/cairo"
+                    android:textSize="22sp"
+                    android:textColor="@color/AppColor"
+                    android:text="@string/faireVente_pr"/>
+
+                <Button
+                    android:id="@+id/panier_change_prToggle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="3.9"
+                    android:textSize="22sp"
+                    android:text="+"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_weight="1.2"
+                android:fontFamily="@font/cairo"
+                android:textSize="20sp"
+                android:textColor="@color/AppColor"
+                android:text="@string/faireVente_qte"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                android:textAlignment="textEnd"
+                android:layout_weight="1"
+                android:fontFamily="@font/cairo"
+                android:textSize="20sp"
+                android:textColor="@color/AppColor"
+                android:text="@string/faireVente_prix"/>
+
+
+
+        </LinearLayout>
+
+        <!-- Affichage des clients .. -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/Div_AffichPrVent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            ></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <!-- Valider vente button -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/validerVente_butt"
+            android:layout_width="290dp"
+            android:layout_height="55dp"
+            android:background="@drawable/bg_butt"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="3"
+                android:src="@drawable/valid"/>
+            <TextView
+                android:id="@+id/faireVente_valider_desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/cairo"
+                android:textSize="22sp"
+                android:textColor="@color/White"
+                android:text="@string/faireVente_valider"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Reglement button -->
+    <LinearLayout
+        android:id="@+id/div_reg_butt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="13dp"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/faireReg_butt"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:background="@drawable/bg_butt"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="3"
+                android:src="@drawable/money_white"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10dp"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/cairo"
+                android:textSize="16sp"
+                android:textColor="@color/White"
+                android:text="@string/reglement"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</FrameLayout>

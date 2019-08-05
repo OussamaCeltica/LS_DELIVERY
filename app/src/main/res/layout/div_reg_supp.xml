@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@color/AppColor"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/bon_etat"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:fontFamily="@font/cairo"
+        android:background="@color/Red"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textColor="@color/White"
+        android:text="SUPPRIMÉ"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="16sp"
+
+            android:text="@string/rglmt_labClt"/>
+
+        <TextView
+            android:id="@+id/reg_nomClt_supp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:textSize="16sp"
+            android:textColor="@color/White"
+            android:text="Benguergoura Oussama abdelkader"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="16sp"
+
+            android:text="@string/div_versement_montant"/>
+
+        <TextView
+            android:id="@+id/reg_montant_supp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:textSize="16sp"
+            android:textColor="@color/White"
+            android:text="1258965230000 DA "/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="16sp"
+            android:text="@string/div_versement_date"/>
+
+        <TextView
+            android:id="@+id/reg_date_supp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:textSize="16sp"
+            android:textColor="@color/White"
+            android:text="2018-05-05 15:30 "/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="16sp"
+            android:text="@string/div_versement_mode"/>
+
+        <TextView
+            android:id="@+id/reg_mode_supp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="4dp"
+            android:textSize="16sp"
+            android:textColor="@color/White"
+            android:text="Espèce"/>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

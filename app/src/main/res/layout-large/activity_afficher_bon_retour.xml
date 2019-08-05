@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/bg2"
+    tools:context="com.ls.celtica.lsdelivryls.Ventes.AfficherBonRetour">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- div de Bar Title  -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@color/AppColor">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="60dp"
+                android:fontFamily="@font/cairo"
+                android:gravity="center"
+                android:text="@string/bonRetour_titre"
+
+                android:textAlignment="center"
+                android:textColor="@color/White"
+                android:textSize="29sp" />
+            <LinearLayout
+                android:id="@+id/bonRetour_search_butt"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:background="@color/AppColor"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="left">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/search_ic"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bonRetour_add_butt"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:padding="7dp"
+                android:background="@color/AppColor"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="right">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/add_pr"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bonRetour_voirArchive_butt"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:padding="7dp"
+                android:visibility="gone"
+                android:background="@color/AppColor"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_gravity="right">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/menu_point"/>
+            </LinearLayout>
+
+            <!-- div de recherche d un bon -->
+            <FrameLayout
+                android:id="@+id/bonRetour_div_search"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="-70dp"
+                android:orientation="horizontal"
+                android:background="@color/AppColor">
+                <ImageView
+                    android:id="@+id/bonRetour_div_search_back"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:src="@drawable/back"/>
+                <EditText
+                    android:id="@+id/bonRetour_searchInp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="70dp"
+                    android:layout_marginRight="70dp"
+                    android:background="@color/AppColor"
+                    android:fontFamily="@font/cairo"
+                    android:gravity="center"
+                    android:textColorHint="@color/White"
+                    android:hint="@string/aff_bon_chercher"
+                    android:textColor="@color/White"
+                    android:textSize="21sp" />
+                <ImageView
+                    android:id="@+id/bonRetour_div_search_calendar"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:padding="10dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/calendar"/>
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/affRetour_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/Green"
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:text="total: 256 002 036 000 000 000 .00 DA"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:background="@color/AppColor">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/White"
+                android:fontFamily="@font/cairo"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/AppColor"
+                android:textSize="27sp"
+                android:text="@string/aff_vente_bon"/>
+
+
+        </LinearLayout>
+
+        <!-- Affichage des clients .. -->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/Div_AffichBonRetour"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

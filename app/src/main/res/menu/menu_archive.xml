@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/vente_archive" android:title="@string/archive_ventes" />
+    <item android:id="@+id/commande_archive" android:title="@string/archive_commande" />
+    <item android:id="@+id/retour_archive" android:title="@string/archives_retour" />
+    <item android:id="@+id/rglmt_archive" android:title="@string/archives_rglmt" />
+
+</menu>

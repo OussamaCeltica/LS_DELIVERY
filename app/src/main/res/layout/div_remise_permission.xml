@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="5dp">
+
+    <RadioGroup
+        android:id="@+id/radio_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <RadioButton
+            android:id="@+id/check_remise_oui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/param_remiseOption_oui"/>
+
+        <RadioButton
+            android:id="@+id/check_remise_non"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/param_remiseOption_non"
+
+            />
+    </RadioGroup>
+
+
+
+</LinearLayout>

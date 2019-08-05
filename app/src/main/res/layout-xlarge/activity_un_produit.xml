@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context="com.ls.celtica.lsdelivryls.Clients.UnClient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal"
+            android:background="@color/AppColor"
+            >
+
+            <TextView
+                android:id="@+id/pr_titre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/cairo"
+                android:gravity="center"
+                android:text=""
+
+                android:textAlignment="center"
+                android:textColor="@color/White"
+                android:textSize="28sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="5"
+                android:layout_marginLeft="20dp"
+
+                android:src="@drawable/nom_pr"/>
+            <TextView
+                android:id="@+id/nom_pr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="@font/cairo"
+                android:gravity="center"
+                android:lineSpacingExtra="-10dp"
+                android:textAlignment="textStart"
+                android:textSize="29sp"
+                android:textColor="@color/AppColor"
+                android:text="Coca Cola Cannette"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="5"
+                android:layout_marginLeft="20dp"
+
+                android:src="@drawable/stock"/>
+            <TextView
+                android:id="@+id/stock_pr"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="@font/cairo"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textSize="29sp"
+                android:textColor="@color/AppColor"
+                android:text="stock: 2563200"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="5"
+                android:layout_marginLeft="20dp"
+
+                android:src="@drawable/money"/>
+            <TextView
+                android:id="@+id/prix_pr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="@font/cairo"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textSize="29sp"
+                android:lineSpacingExtra="-10dp"
+                android:textColor="@color/AppColor"
+                android:text="Prix: 100 DA"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="5"
+                android:layout_marginLeft="20dp"
+
+                android:src="@drawable/codebar"/>
+            <TextView
+                android:id="@+id/code_pr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="@font/cairo"
+                android:gravity="center"
+                android:textAlignment="textStart"
+                android:textSize="29sp"
+                android:lineSpacingExtra="-10dp"
+                android:textColor="@color/AppColor"
+                android:text="EAN13:58985554"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+
+            android:background="@color/White"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textSize="29sp"
+                android:textColor="@color/AppColor"
+                android:text="@string/pr_type_clt"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:fontFamily="@font/cairo"
+                android:textSize="29sp"
+                android:textColor="@color/AppColor"
+                android:text="@string/pr_prix_type_clt"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp">
+            <LinearLayout
+                android:id="@+id/pr_divAffichPrix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></LinearLayout>
+        </ScrollView>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

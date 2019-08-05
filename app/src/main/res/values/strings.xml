@@ -1,0 +1,281 @@
+<resources>
+    <!-- Les String de device config  -->
+    <string name="deviceconfig_label">Identificateur Mobile:</string>
+    <string name="deviceconfig_hint">Donner un identificateur(ex: m1)</string>
+
+    <!-- Les String D'Accueil -->
+    <string name="app_name">LS Delivery</string>
+    <string name="clt">Les Clients</string>
+    <string name="vente">Les Ventes</string>
+    <string name="produit">Les Produits</string>
+    <string name="sync">Import/Export</string>
+    <string name="param">Paramètres</string>
+    <string name="reglement">Règlements</string>
+    <string name="acc_commande">Commandes</string>
+    <string name="acc_bon_retour">Bons de retour</string>
+
+    <!-- Les Toast -->
+    <string name="remplissage_err">Remplissez tous les champs.</string>
+    <string name="add_ok">Bien ajouté.</string>
+
+    <!-- Les String de login -->
+    <string name="login_modeTitre">Mode d\'accès:</string>
+    <string name="login_modeHint">Choisir un mode ..</string>
+    <string name="login_modeAdmin">Admin</string>
+    <string name="login_modeVendeur">Vendeur</string>
+    <string name="select_clt">Selectionner Client</string>
+
+    <string name="login_titre">Connexion</string>
+    <string name="login_pseudo_Label">Code Vendeur:</string>
+    <string name="login_pseudoHint">Choisir un vendeur ..</string>
+    <string name="login_mdp_Label">Mot de passe:</string>
+    <string name="login_mdp_Hint">Tapez  votre mot de passe</string>
+    <string name="login_device_Hint">Type Mobile:</string>
+    <string name="login_device_type1">Scanner integré</string>
+    <string name="login_device_type2">Sans Scanner</string>
+
+    <string name="login_user_LabelCamion">Code Camion:</string>
+    <string name="login_user_descCamion">Choisir un camion ..</string>
+    <string name="login_valider">Connecter</string>
+
+    <!-- Les String de Synchronisation -->
+    <string name="sync_conect_succ">Connexion réussite.</string>
+    <string name="sync_clt">Synchroniser les clients</string>
+    <string name="sync_titre">Synchronisation ..</string>
+    <string name="sync_wait">attendez SVP ..</string>
+    <string name="sync_conect">Connexion ..</string>
+    <string name="sync_clt_BonExiste">Il faut d\'abord synchroniser les bons de vente et les règlements</string>
+    <string name="desc_sync_clt">La synchronisation des clients permet de récupérer tous les clients du serveur. </string>
+    <string name="sync_conect_err">Erreur, Réessayez ..</string>
+
+    <string name="import_produit">Importer les produits</string>
+    <string name="import_produit_noUser">Sélectionner un camion et un vendeur!</string>
+    <string name="import_produit_BonExist">Ce Bon est déjà importé</string>
+    <string name="sync_err">Echec , Réessayez SVP!</string>
+    <string name="desc_import_produit">Importer tous les produits du dernier bon de chargement.</string>
+
+    <string name="export_bon">Exporter les bons de vente</string>
+    <string name="desc_export_bon">Exporter tous les nouveaux bons de vente.</string>
+
+    <string name="export_reglement">Exporter les règlements clients</string>
+    <string name="desc_export_reglement">Exporter tous les  règlements clients.</string>
+
+    <string name="import_camion">Importer les codes camions</string>
+    <string name="desc_import_camion">Importer tous les codes des camions chargés de la distribution.</string>
+
+    <string name="export_clt_local">Exporter les clients </string>
+    <string name="desc_export_clt_local">Exportation des clients ajouter par l utilisateur mobile</string>
+
+    <string name="sync_succ">Synchronisation terminée </string>
+
+    <string name="sync_ERPstockNoSynch">Il y a des ventes qui n\'ont pas encore été validées sur le serveur, voulez-vous quand même continuer ?</string>
+
+    <string name="sync_cltCodeDouble">L\'importation des clients n\'est pas complètement terminée  a cause d\'un code client en double, vérifiez sur le serveur avant de relancer l\'opération.--- code client :</string>
+
+
+    <!-- Les String des Clients -->
+    <string name="aff_clt_titre">Les Clients</string>
+    <string name="aff_clt_chercher">Chercher un client ..</string>
+    <string name="aff_clt_modifGPS">Modifier Les Coordonnées GPS</string>
+    <string name="aff_clt_modifGPS_succ">La Modification est faite</string>
+    <string name="aff_clt_modifGPS_msg">Voulez-vous vraiment changer ?</string>
+    <string name="add_clt_titre">Ajouter un nouveau client</string>
+    <string name="add_clt_nomLabel">Nom:</string>
+    <string name="add_clt_telLabel">Tél:</string>
+    <string name="add_clt_adrLabel">Adresse:</string>
+    <string name="add_clt_nomInp">Donner un nom ..</string>
+    <string name="add_clt_telInp">Donner le numero de tél ..</string>
+    <string name="add_clt_adrInp">Donner l adresse du client ..</string>
+    <string name="add_clt_typeLabel">Type Client:</string>
+    <string name="add_clt_selectLoc">Sélectioner les coordonnée GPS</string>
+    <string name="add_clt_selectLocActuel">Actuel</string>
+    <string name="add_clt_selectLocMap">Choisir</string>
+    <string name="add_clt_valider">Ajouter</string>
+    <string name="clt_faireVente_butt">Ajouter une vente</string>
+    <string name="div_clt_code">Code Client: </string>
+    <string name="add_clt_succes">Le Client a été ajouté</string>
+    <string name="update_clt_gps_err">Activer le GPS SVP !</string>
+
+
+    <!-- Les String des Vente -->
+    <string name="faireVente_titre">Panier</string>
+    <string name="faireVente_addPr">Ajouter un produit</string>
+    <string name="faireVente_valider">Valider la vente</string>
+    <string name="faireVente_pr">Produit</string>
+    <string name="faireVente_panierVide">Le Panier est vide.</string>
+    <string name="faireVente_succes">La vente est faite.</string>
+    <string name="faireVente_scanner_qt">Quantité:</string>
+    <string name="faireVente_supp_pr_desc">Voulez-vous vraiment supprimez !</string>
+    <string name="faireVente_supp_pr_oui">Oui</string>
+    <string name="faireVente_supp_pr_non">Non</string>
+    <string name="faireVente_qte">Qté</string>
+    <string name="faireVente_prix">P.U</string>
+    <string name="aff_vente_titre">Les Ventes</string>
+    <string name="aff_vente_bon">Les Bons</string>
+    <string name="aff_vente_bon_nom">Bon: </string>
+    <string name="aff_vente_bon_date">Le: </string>
+    <string name="aff_vente_pTot">Prix Total: </string>
+    <string name="aff_vente_pTotSansRemise">Total Sans Remise: </string>
+    <string name="faireVente_GPS">Autoriser le GPS </string>
+    <string name="faireVente_selectClt">Sélectioner un client</string>
+    <string name="faireVente_selectPr">Sélectioner un produit</string>
+    <string name="faireVente_noCadebar">Ce produit n\'existe pas !</string>
+
+    <string name="faireVente_remisePr">Ajouter une remise </string>
+    <string name="faireVente_remiseTitre">remise: </string>
+
+    <string name="faireVente_panierTotal">Total:</string>
+    <string name="faireVente_panierModifQt">Modifier la quantité !</string>
+    <string name="faireVente_panierModifPrix">Modifier le prix !</string>
+
+    <string name="faireVente_noProduit">Importer les produits du camion d’abord.</string>
+
+    <string name="aff_bon_chercher">Chercher un bon ..</string>
+    <string name="faireVente_noCodebarre">Ce codebarre n\'existe pas ..</string>
+
+    <string name="vente_remise">Remise:</string>
+    <string name="vente_prixApresRemise">Total AR:</string>
+
+    <!-- Les String de Commande -->
+    <string name="commande_titre">Les Commandes</string>
+    <string name="commande_valider_Butt">Valider Commande</string>
+    <string name="commande_succ">La commande est faite.</string>
+
+    <!-- Les String de Bon de Retour -->
+    <string name="bonRetour_titre">Bons de retour</string>
+    <string name="BonRetour_valider_Butt">Valider le Bon</string>
+    <string name="BonRetour_succ">Le Retour est fait.</string>
+
+
+    <!-- Les String des Produits -->
+    <string name="aff_pr_titre">Les Produits</string>
+    <string name="aff_pr_chercher">Chercher un produit ..</string>
+    <string name="div_pr_codePr">Code: </string>
+    <string name="panier_codePr">Code PR</string>
+    <string name="title_activity_client_location">Map</string>
+    <string name="add_pr_panier_scan_Hint">Scanner le code barre</string>
+    <string name="add_pr_panier_qt">Donner la quantité</string>
+    <string name="aff_prv_titre">Les Produits</string>
+    <string name="pr_quantity">Quantité:</string>
+    <string name="pr_nom">Nom:</string>
+    <string name="pr_prixVente">prix:</string>
+    <string name="add_pr_panier_err">Ce produit n’est pas disponible</string>
+    <string name="add_pr_panier_qt_err"> Cette quantité n’est pas disponible.</string>
+    <string name="add_pr_panier_pr_exist">Ce produit est déjà dans le bon.</string>
+    <string name="pr_type_clt">Type:</string>
+    <string name="pr_prix_type_clt">Prix:</string>
+    <string name="pr_add_prDesc">Ajouter un  produit</string>
+
+    <string name="pr_erp">Tous les produits</string>
+    <string name="pr_camion">Produits du camion</string>
+
+    <!-- Les String des règlements -->
+    <string name="rglmt_titre">Ajouter un Règlement</string>
+    <string name="aff_rglmt_titre">Les Règlements</string>
+    <string name="aff_rglmt_faireButt">Nouveau Règlement</string>
+    <string name="aff_rglmt_search">Chercher un règlement ..</string>
+    <string name="rglmt_labClt">Client:</string>
+    <string name="rglmt_labMontant">Montant: </string>
+    <string name="rglmt_selectMontant">Tapez le montant</string>
+    <string name="rglmt_labMode">Mode:</string>
+    <string name="rglmt_ModEspece">Espèce</string>
+    <string name="rglmt_ModCheq">Chèque</string>
+    <string name="div_versement_montant">Versement:</string>
+    <string name="div_versement_date">Le:</string>
+    <string name="div_versement_mode">Mode:</string>
+    <string name="rglmt_selectClt">Sélectioner un client ..</string>
+
+    <!-- Les String des paramétrage  -->
+    <string name="param_titreAdmin">Administrateur</string>
+    <string name="param_LabelAdmin">Nom Admin:</string>
+    <string name="param_HinAdmin">Tapez le nom de l admin</string>
+
+    <string name="param_LabelMdp">Mot de passe:</string>
+    <string name="param_HintMdp">Tapez le mot de passe</string>
+
+    <string name="param_conn">Valider</string>
+
+    <string name="param_mdp_err">Mot de passe incorrect</string>
+    <string name="param_user_err">Nom d admin incorrect</string>
+
+    <string name="param_deviceNom">Nom de l\'appareil</string>
+    <string name="param_DescDeviceNom">Afficher et modifier le nom de l\'appareil. </string>
+    <string name="param_deviceNomActuelHint">Nom actuel: </string>
+    <string name="param_deviceNewNomHint">Donner le nouveau nom .. </string>
+
+    <string name="param_deconect">Déconnecter</string>
+    <string name="param_DescDeconect">Fermer la session Actuelle du vendeur. </string>
+
+    <string name="param_changeLang_Lab">Changer la langue</string>
+    <string name="param_DescChangeLang">Changement de la langue principale de l\'application </string>
+
+    <string name="param_userActuel_Lab">L\'Utilisateur Actuel</string>
+    <string name="param_DescUserActuel">Afficher le vendeur actuel avec le camion. </string>
+    <string name="param_userActuelCamion_Lab">Code Camion:</string>
+    <string name="param_userActuelVendeur_Lab">Code Vendeur: </string>
+    <string name="param_userActuelVendeur_vide">Aucun vendeur n’est sélectioné ! </string>
+
+    <string name="param_AddPr_Lab">Ajouter les produits</string>
+    <string name="param_DescAddPr">Ajouter les produit déjà existant dans un camion lors du changement du camion actuel </string>
+    <string name="param_AddPr_nomPr">Tapez le nom du produit ..</string>
+    <string name="param_AddPr_stockPr"> Tapez la quantité ..</string>
+    <string name="param_AddPr_codebar">Saisir le code barre ..</string>
+    <string name="param_AddPrix_Lab">Ajouter un prix</string>
+    <string name="param_AddPr_valider">Valider</string>
+    <string name="param_AddPrix_type">Choisir un type ..</string>
+    <string name="param_AddPrix_prix">Donner un prix ..</string>
+    <string name="param_AddPrix_existe">Le prix pour ce type client est déjà ajouté</string>
+    <string name="param_AddPrix_success">Le produit est ajouté</string>
+
+    <string name="param_admin_ChangeMdp">Changer le mot de passe d\'admin</string>
+    <string name="param_admin_DescChangeMdp">Changer le nom et le mot de passe d\'admin</string>
+    <string name="param_admin_ChangeMdp_nomAdmin">Nom d\'admin ..</string>
+    <string name="param_admin_ChangeMdp_Actuel">Mot de passe actuel ..</string>
+    <string name="param_admin_ChangeMdp_New">Nouveau mot de passe ..</string>
+    <string name="param_admin_ChangeMdp_succes">Changement effectué avec succès.</string>
+    <string name="param_admin_ChangeMdp_err">Mot de passe actuel incorrect.</string>
+
+    <string name="param_lastCamion_titre">Dernier camion</string>
+    <string name="param_lastCamion_desc">Le dernier camion qui a fait des ventes sur cet appareil.</string>
+
+
+    <string name="param_editPrix_titre">Autoriser la modification des prix</string>
+    <string name="param_editPrix_desc">autoriser la modification des prix avant de faire une vente.</string>
+
+    <string name="param_remise_titre">Autoriser les remises</string>
+    <string name="param_remise_desc">autoriser les remises lors des ventes.</string>
+    <string name="param_remiseOption_oui">Autoriser</string>
+    <string name="param_remiseOption_non">Non autoriser</string>
+    <string name="param_remiseOption_fact">Facture</string>
+    <string name="param_remiseOption_pr">Produit</string>
+
+    <string name="param_bon_archive_titre">Bon de ventes déjà exportés</string>
+    <string name="param_bon_archive_desc">Liste des ventes   qui ont été déjà exportées vers le serveurs.</string>
+
+    <string name="param_bd_formate_titre">Réinitialisation de l\'appareil</string>
+    <string name="param_bd_format_desc">Permet de videz toutes les tables sans synchronisation.</string>
+
+    <string name="param_scanner_titre">Changer le type du mobile</string>
+    <string name="param_scanner_desc">permet d\'indiquer si le mobile possède un scanner code a barre intégré ou non.</string>
+
+    <string name="param_companyName_titre">Configurer le nom d\'entreprise</string>
+    <string name="param_companyName_desc">permet d\'identifier le nom d\'entreprise lors d\'impression des bons.</string>
+    <string name="param_companyName_change">Nom d\'entreprise:</string>
+    <string name="param_companyName_changeHInt">Donner le nom d\'entreprise</string>
+
+    <string name="param_printerName_titre">Configurer le nom d\'imprimante</string>
+    <string name="param_printerName_desc">permet d\'identifier le nom d\'imprimante pour l\'impression des bons.</string>
+    <string name="param_printerName_change">Nom d\'imprimante:</string>
+
+    <string name="param_configserveur_titre">Configuration du serveur</string>
+    <string name="param_configserveur_desc">permet a accéder au serveur pour faire les import/export.</string>
+
+
+    <!-- Les String des archives  -->
+    <string name="archive_ventes">Archive Ventes</string>
+    <string name="archive_commande">Archive Commandes</string>
+    <string name="archives_retour">Archive Bons de Reour</string>
+    <string name="archives_rglmt">Archive Règlement</string>
+    <string name="title_activity_show_client_location">Map</string>
+
+</resources>

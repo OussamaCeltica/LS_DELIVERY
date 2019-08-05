@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/device_nom_actuel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/cairo"
+            android:textSize="32sp"
+            android:textColor="@color/AppColor"
+            android:textAlignment="center"
+            android:text="Nom actuel: dev1" />
+
+        <EditText
+            android:id="@+id/device_new_nom"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_butt2"
+            android:fontFamily="@font/cairo"
+            android:hint="@string/param_deviceNewNomHint"
+            android:textColorHint="@color/Gray"
+            android:textSize="32sp"
+            android:textColor="@color/Black"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/device_new_nom_valider"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="230dp"
+            android:layout_marginRight="230dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/bg_butt"
+            android:fontFamily="@font/cairo"
+            android:textSize="32sp"
+            android:textColor="@color/White"
+            android:textAlignment="center"
+            android:text="@string/add_clt_valider" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Use DrawerLayout as root container for activity -->
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+
+    tools:context="com.ls.celtica.lsdelivryls.Accueil">
+
+    <!-- (Le div qui contient le body avec le header) Layout to contain contents of main body of screen (drawer will slide over this) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg_acc"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="@color/AppColor"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/cairo"
+                android:gravity="center"
+                android:text="LS Delivery"
+
+                android:textAlignment="center"
+                android:textColor="@color/White"
+                android:textSize="30sp" />
+            <ImageView
+                android:id="@+id/openDrawer_butt"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/menu_butt"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutDirection="ltr"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    >
+
+                    <LinearLayout
+                        android:id="@+id/butt_clt"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="13dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_acc_butt">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginTop="5dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/client"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-22dp"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/cairo"
+                            android:text="@string/clt"
+                            android:textColor="@color/White"
+
+                            android:textSize="27sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/butt_pr"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_acc_butt">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="55dp"
+                            android:layout_marginRight="55dp"
+                            android:layout_marginTop="25dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/produit"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-4dp"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/cairo"
+                            android:text="@string/produit"
+                            android:textColor="@color/White"
+                            android:textSize="27sp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:id="@+id/butt_vente"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="13dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_acc_butt">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="55dp"
+                            android:layout_marginRight="55dp"
+                            android:layout_marginTop="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/vente"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-17dp"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/cairo"
+                            android:text="@string/vente"
+                            android:textColor="@color/White"
+                            android:textSize="27sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/butt_rglmt"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_acc_butt">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginTop="10dp"
+                            android:scaleType="fitXY"
+                            android:scaleY="1.2"
+                            android:src="@drawable/money_white"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-17dp"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/cairo"
+                            android:text="@string/reglement"
+
+                            android:textColor="@color/White"
+                            android:textSize="27sp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginTop="20dp">
+                    <LinearLayout
+                        android:id="@+id/butt_command"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="13dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_acc_butt">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="130dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="50dp"
+                            android:layout_marginTop="5dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/commande"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-19dp"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/cairo"
+                            android:text="@string/acc_commande"
+                            android:textColor="@color/White"
+                            android:textSize="27sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/butt_bon_retour"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:background="@drawable/bg_acc_butt">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:layout_marginLeft="60dp"
+                            android:layout_marginRight="60dp"
+                            android:layout_marginTop="20dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/bon_retour"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-15dp"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/cairo"
+                            android:text="@string/acc_bon_retour"
+                            android:textColor="@color/White"
+                            android:textSize="27sp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!-- Container for contents of drawer - use NavigationView to make configuration easier -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:fitsSystemWindows="true"
+        app:itemTextColor="@color/AppColor"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer_menu"/>
+
+</android.support.v4.widget.DrawerLayout>
+
